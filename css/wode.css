@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.dingbu{
+	width: 100%;
+	height: 2.34rem;
+	background-color: #eb4444;
+}
+.san{
+	width: 93%;
+	margin: auto;
+	padding-top: 0.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.san img{
+	height: 0.5rem;
+}
+.san img.wodede{
+	height: 0.3rem;
+}
+.touxiang{
+	width: 93%;
+	height: 1.63rem;
+	background-color: white;
+	border-radius: 0.15rem;
+	margin: auto;
+	margin-top: 0.5rem;
+	position: relative;
+}
+.touxiang img.weibo{
+	width: 0.9rem;
+	margin-top: 0.15rem;
+	margin-left: 0.15rem;
+}
+.nicheng{
+	width: 2.2rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #f62786;
+	position: absolute;
+	top: 0.24rem;
+	left: 1.29rem;
+}
+.touxiang img.vip{
+	width: 0.61rem;
+	position: absolute;
+	top: 0.7rem;
+	left: 1.29rem;
+}
+.touxiang img.shouji{
+	height: 0.25rem;
+	position: absolute;
+	top: 1rem;
+	left: 1.26rem;
+}
+.touxiang img.jiantou{
+	width: 0.11rem;
+	position: absolute;
+	right: 0.14rem;
+	top: 0.8rem;
+}
+.dier{
+	width: 93%;
+	height: 1.63rem;
+	background-color: white;
+	border-radius: 0.15rem;
+	margin: auto;
+	margin-top: 0.74rem;
+	margin-bottom: 0.24rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.dier img{
+	width: 1.1rem;
+}
+.disan{
+	width: 93%;
+	height: 2.79rem;
+	border-radius: 0.15rem;
+	background-color: white;
+	margin: auto;
+	margin-bottom: 0.24rem;
+}
+.disi{
+	width: 93%;
+	height: 100%;
+	/*background-color: yellow;*/
+	margin: auto;
+	
+}
+.diwu{
+	width: 100%;
+	height: 32.5%;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-color: darkgrey;
+	border-bottom-width: 0.01rem;
+	line-height: 70%;
+}
+.disi>div:last-child{
+	border-bottom: none;
+}
+.diwu img.dingwei{
+	height: 0.53rem;
+}
+.diwu img.shoucang{
+	height: 0.45rem;
+}
+.diwu img.kefu{
+	height: 0.56rem;
+}
+.dibu{
+	list-style: none;
+	height: 1.02rem;
+	width: 100%;
+	margin: auto;
+	background-color: white;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 333;
+}
+.dibu li{
+	width: 25%;
+}
+.dibu img.dibu1{
+	width: 0.5rem;
+}
+.dibu img.dibu2{
+	width: 0.5rem;
+}
+.dibu img.dibu3{
+	width: 0.47rem;
+}
+.dibu img.dibu4{
+	width: 0.56rem;
+}

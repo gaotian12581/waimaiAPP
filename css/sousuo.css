@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+.dingbu{
+	width: 96%;
+	height: 1rem;
+	/*background-color: red;*/
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dingbu a{
+	color:#999;
+	text-decoration: none;
+	font-size: 0.6rem;
+	line-height: 1rem;
+}
+.dingbu input{
+	width: 80%;
+	height: 70%;
+	border: none;
+	background-color: #f8f8f8;
+	color: lightgrey;
+}
+.dingbu p{
+	font-size: 0.3rem;
+	color: black;
+	font-weight: bold;
+}
+.xiamian{
+
+}
