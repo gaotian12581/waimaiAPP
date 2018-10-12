@@ -13,6 +13,7 @@
    		
     </script>
     <script type="text/javascript" src="js/rem.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="http//at.alicdn.com/t/font_803512_br5vcqtxvg9.css">
 </head>
@@ -28,14 +29,17 @@
 		</div>
 	</div>
 	<div class="banner">
-		<a href="">
-			<input type="image" src="img/banner.png" name="1" >
-		</a>
-		<a href="">
-			<input type="image" src="img/banner.png" name="1" >
-		</a>
+		
+			<img src="img/banner.png" id="kuandu">
+		
+		
+			<img src="img/banner1.png">
+		
+		
+			<img src="img/banner2.png">
+		
 		<div class="bot">
-			<div class="bot1"></div>
+			<div class="bot1 active"></div>
 			<div class="bot1"></div>
 			<div class="bot1"></div>
 		</div>
@@ -232,3 +236,49 @@
 	</ul>
 </body>
 </html>
+<script>
+	let widths=$(".banner").innerWidth();
+		let t;
+		t=setInterval(move,1500);
+		$(".banner img").eq(0).css("left",0);
+		$(".banner bot>div").eq(0).addClass("active");
+		// console.log(".banner-dot>div")
+		let next=0;
+		let now=0;
+		function move(){
+			next++;
+			if(next==$(".banner img").length){
+				next=0;
+			}
+			$(".banner img").eq(next).css("left",widths);
+			$(".banner img").eq(now).animate({"left":-widths});
+			$(".banner img").eq(next).animate({"left":0});
+			$(".bot1").eq(next).addClass("active").siblings().removeClass("active");
+			now=next;
+		}
+		function moveL(){
+			next--;
+			if(next<0){
+				next=$(".banner img").length-1;
+			}
+			$(".banner img").eq(next).css("left",-widths);
+			$(".banner img").eq(now).animate({"left":widths});
+			$(".banner img").eq(next).animate({"left":0});
+			$(".bot1").eq(next).addClass("active").siblings().removeClass("active");
+			now=next;
+		}
+
+		$(".banner").hover(function(){
+			clearInterval(t);
+		},function(){
+			t=setInterval(move,1500);
+		});
+
+		$(".bot1").click(function(){
+			// console.log(1);
+			$(".banner img").eq($(this).index()).css("left",0).siblings("img").css("left",widths);
+			$(".bot1").eq($(this).index()).addClass("active").siblings().removeClass("active");
+			now=$(this).index();
+			next=$(this).index();
+		});
+</script>
